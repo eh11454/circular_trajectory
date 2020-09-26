@@ -1,4 +1,4 @@
-//This C++ program will calculate theta in terms of time t.
+//This program will calculate theta in terms of time t.
 // The code was influenced by Computational Physics, Konstantinos N. Anagnostopoulos
 //Data will be recorded onto the file circulartrajectory.txt and plotted on Gnuplot
 
@@ -16,54 +16,54 @@ int main()
 	//Variables
 
 	double x, y, vx, vy, ax, ay, r, x0, y0, theta, omega, t, t0, tf, dt;
-	string buf;
+	 
 
 	ofstream myfile("circulartrajectory.txt");
 
 
 	//-----------------------------
 	//Inputs
-	//Omega, x0, y0, r, t, tf and dt will be read to the file
+	
 	cout << "Please enter omega\n";
-	cin >> omega;	getline(cin, buf);
+	cin >> omega;	 
 	while (omega <= 0.0) {
 		cout << "Please enter an omega greater than 0\n";
-		cin >> omega;	getline(cin, buf);
+		cin >> omega;	 
 	}
 
 
 	cout << "Please enter the radius r\n";
-	cin >> r;	getline(cin, buf);
+	cin >> r;	 
 	while (r <= 0.0) {
 		cout << "Please enter a radius greater than 0\n";
-		cin >> r;	getline(cin, buf);
+		cin >> r;	 
 	}
 
 	cout << "Please enter the center of the circle x0\n";
-	cin >> x0;	getline(cin, buf);
+	cin >> x0;	 
 
 	cout << "Please enter the center of the circle y0\n";
-	cin >> y0;	getline(cin, buf);
+	cin >> y0;	 
 
 	cout << "Please enter the start time\n";
-	cin >> t0;	getline(cin, buf);
+	cin >> t0;	 
 	while (t0 < 0.0) {
 		cout << "Please enter a start time greater than or equal to 0\n";
-		cin >> t0;	getline(cin, buf);
+		cin >> t0;	 
 	}
 
 	cout << "Please enter the final time\n";
-	cin >> tf;	getline(cin, buf);
+	cin >> tf;	 
 	while (tf <= 0.0) {
 		cout << "Please enter a final time greater than 0\n";
-		cin >> tf;	getline(cin, buf);
+		cin >> tf;	 
 	}
 
 	cout << "Please enter the dt\n";
-	cin >> dt; getline(cin, buf);
+	cin >> dt;  
 	while (dt <= 0.0) {
 		cout << "Please enter a dt greater than 0\n";
-		cin >> dt;	getline(cin, buf);
+		cin >> dt;	 
 	}
 
 
